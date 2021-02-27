@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/jorge/work/blog/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_77305072"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/jorge/work/blog/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_37c09ae8"
+  }
+]

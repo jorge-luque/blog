@@ -2,6 +2,9 @@
     <div>
       <div class="header">
           <span class="title">Georgeluque.com</span>
+          <ul class="navigation">
+             <li> <a href="/about">/ About</a> </li>
+          </ul>
       </div>
           <div class="subheader">
               <img src="~/assets/myself.jpg" alt="">  
@@ -15,6 +18,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: black;
     height: 5vh;
     color: azure;
@@ -25,7 +29,7 @@
     font-size: 2em;
 }
 
-.header .hightlight {
+.subheader .hightlight {
     color: goldenrod;
 }
 
@@ -57,4 +61,19 @@
     flex-direction: column;
     flex: 1;
   }
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0; 
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
 </style>
