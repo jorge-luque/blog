@@ -7,15 +7,17 @@ body {
 }
 
 .main_container {
-    width: 30%;
     background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30%;
     border-color: silver;
     border-radius: 5px;
     box-shadow: 5px 8px #888888;
 
+}
+
+.title {
+    padding: 2rem;
 }
 
