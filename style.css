@@ -50,8 +50,8 @@ body {
 .subheader {
     height: 40vh;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     background-color: #eeeeee;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
 }
 
 .subheader .logo_text {
-    font-size: 2rem;
+    font-size: 2em;
     text-align: left;
     flex-grow: 3;
 }
