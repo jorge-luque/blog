@@ -48,7 +48,7 @@ body {
 }
 
 .subheader {
-    height: 40vh;
+    max-height: 40vh;
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
@@ -59,14 +59,16 @@ body {
 }
 .subheader > img {
     max-height: 100%;
-    object-fit: scale-down;
+    object-fit: contain;
     flex-grow: 1;
+    max-width: 30vh;
 }
 
 .subheader .logo_text {
     font-size: 2em;
     text-align: left;
     flex-grow: 3;
+    display: inline;
 }
 .subheader > * {
     display: flex;
@@ -74,4 +76,6 @@ body {
     flex: 1;
   }
 
-
+.hightlight {
+    color: goldenrod;
+}
