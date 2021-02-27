@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     background-color: black;
-    height: 10%;
+    height: 5vh;
     color: azure;
     padding: 10px;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .main_container {
-    height: 85vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,5 +46,32 @@ body {
     margin-top: 30px;
     padding: 10px;
 }
+
+.subheader {
+    height: 40vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+}
+.subheader > img {
+    max-height: 100%;
+    object-fit: scale-down;
+    flex-grow: 1;
+}
+
+.subheader .logo_text {
+    font-size: 2rem;
+    text-align: left;
+    flex-grow: 3;
+}
+.subheader > * {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 
 
