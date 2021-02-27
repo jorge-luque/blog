@@ -1,10 +1,16 @@
-body {
-    font-family: 'Fira Mono', monospace;
-    height: 100vh;
-    font-size: 12px;
-    margin: 0 auto;
-}
+<template>
+    <div>
+      <div class="header">
+          <span class="title">Georgeluque.com</span>
+      </div>
+          <div class="subheader">
+              <img src="~/assets/myself.jpg" alt="">  
+          <p class="logo_text">Doing <span class="hightlight">big</span> things</p> 
+      </div>
+    </div>
+</template>
 
+<style>
 .header {
     width: 100%;
     display: flex;
@@ -19,32 +25,8 @@ body {
     font-size: 2em;
 }
 
-.main_container {
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main_post {
-    background-color: whitesmoke;
-    border-color: silver;
-    border-radius: 5px;
-    max-width: 75%;
-    box-shadow: 2px 4px #888888;
-    padding: 12px;
-
-}
-
-.main_post .post_title {
-    text-align: center;
-}
-
-.main_post .post_footer {
-    border-top: 1px outset #534d4d6c;
-    font-size: 0.7em;
-    margin-top: 30px;
-    padding: 10px;
+.header .hightlight {
+    color: goldenrod;
 }
 
 .subheader {
@@ -75,7 +57,4 @@ body {
     flex-direction: column;
     flex: 1;
   }
-
-.hightlight {
-    color: goldenrod;
-}
+</style>
