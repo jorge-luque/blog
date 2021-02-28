@@ -2,23 +2,39 @@
     <div class="main_container">
             <div class="main_post">
                     <h2 class="post_title">
-                            Hello world
+                            {{ title }}
                     </h2>
                     <p class="post_lead">
-                        This is the first entry of my disgustingly ambitious project :-)
+                        {{ lead }}
                     </p>
                     <div class="post_footer">
-                            <span class="post_author">@Jorge Luque</span>
-                            <span class="post_date">on 27 Feb 2021</span>
+                            <span class="post_author">@{{author}}</span>
+                            <span class="post_date">on {{date}}</span>
                         </div>
             </div>
     </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+
+async asyncData(context) {
+    let post = {}
+    const posts = await context.app.$fire.firestore.collection('posts').doc('nhH6ZzDeTOTS1ZWvPgoB')
+    .get().then((doc) => {
+        if(doc.exists) {
+            post = doc.data();
+            post.date = post.date.toDate().toDateString();
+        } else {
+            console.log("Error fetching doc");
+        }}) 
+
+    return post;
+}})
+
+
 </script>
 
 <style>
